@@ -66,7 +66,7 @@ export default function About() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {whyUs.map((v, i) => (
-              <div key={v.title} className={`card p-8 text-center group transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`} style={{ transitionDelay: `${0.1 + i * 0.1}s` }}>
+              <div key={v.title} className={`card card-hover p-8 text-center group transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`} style={{ transitionDelay: `${0.1 + i * 0.1}s` }}>
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-sky-50 to-sky-100 flex items-center justify-center mx-auto mb-5 text-3xl group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">{v.icon}</div>
                 <h3 className="font-heading font-semibold text-xl mb-3 text-navy-900 group-hover:text-sky-700 transition-colors">{v.title}</h3>
                 <p className="text-navy-600 text-sm leading-relaxed">{v.desc}</p>
@@ -100,7 +100,7 @@ export default function About() {
 
       <section className="section-pad bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className={`card p-8 md:p-12 bg-gradient-to-br from-sky-50 to-white border-sky-100`}>
+          <div className={`card card-hover p-8 md:p-12 bg-gradient-to-br from-sky-50 to-white border-sky-100 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
             <div className="grid md:grid-cols-2 gap-10 items-center">
               <div className={`transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
                 <span className="tag mb-4">Sứ mệnh</span>

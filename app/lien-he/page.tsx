@@ -21,7 +21,7 @@ export default function Contact() {
           </div>
           <div className="grid lg:grid-cols-5 gap-10">
             <div className={`lg:col-span-2 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '0.15s' }}>
-              <div className="card p-7 space-y-5">
+              <div className={`card card-hover p-7 space-y-5 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '0.15s' }}>
                 {[
                   { icon: '📍', label: 'Địa chỉ', value: CLINIC.address },
                   { icon: '📞', label: 'Hotline', value: CLINIC.phone },

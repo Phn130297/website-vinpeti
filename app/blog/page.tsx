@@ -48,7 +48,7 @@ export default function Blog() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
             {blogPosts.map((post, i) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`} className={`card overflow-hidden group transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: `${i * 0.1}s` }}>
+              <Link key={post.slug} href={`/blog/${post.slug}`} className={`card card-hover overflow-hidden group transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: `${i * 0.1}s` }}>
                 <div className="h-52 relative overflow-hidden">
                   <Image src="/images/cat.jpg" alt={post.title} width={400} height={208} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
