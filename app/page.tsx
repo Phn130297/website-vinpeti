@@ -252,7 +252,7 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((t, i) => (
-              <div key={t.name} className={`card p-7 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`} style={{ transitionDelay: `${i * 0.1}s` }}>
+              <div key={t.name} className={`card card-hover p-7 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`} style={{ transitionDelay: `${i * 0.1}s` }}>
                 <div className="flex gap-1 mb-4">
                   {Array.from({ length: t.rating }).map((_, j) => (
                     <span key={j} className="text-amber-400 text-lg">★</span>
@@ -284,7 +284,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {blogPreview.map((post, i) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`} className={`card overflow-hidden group transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`} style={{ transitionDelay: `${i * 0.1}s` }}>
+              <Link key={post.slug} href={`/blog/${post.slug}`} className={`card card-hover overflow-hidden group transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`} style={{ transitionDelay: `${i * 0.1}s` }}>
                 <div className="h-52 relative overflow-hidden">
                   <Image src="/images/cat.jpg" alt={post.title} width={400} height={208} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />

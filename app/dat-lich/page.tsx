@@ -62,7 +62,7 @@ export default function Booking() {
           <p className="text-navy-600 mt-4 text-lg">Điền thông tin bên dưới, chúng tôi sẽ xác nhận lịch hẹn qua điện thoại.</p>
         </div>
 
-        <form ref={formRef} onSubmit={handleSubmit} className={`card p-8 md:p-10 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '0.15s' }}>
+        <form ref={formRef} onSubmit={handleSubmit} className={`card card-hover p-8 md:p-10 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '0.15s' }}>
           {formSections.map((section, si) => (
             <div key={section.title} className={`mb-8 ${si > 0 ? 'pt-8 border-t border-slate-100' : ''}`}>
               <h3 className="font-heading font-semibold text-sm uppercase tracking-wider text-sky-700 mb-5 flex items-center gap-2.5">

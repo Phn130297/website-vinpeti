@@ -45,7 +45,7 @@ export default function Contact() {
                 <h2 className="font-heading text-2xl font-bold mb-2 text-navy-900">Gửi tin nhắn</h2>
                 <p className="text-navy-600 text-sm mb-6">Chúng tôi sẽ phản hồi trong vòng 24h.</p>
             {sent ? (
-              <div className={`card p-8 md:p-10 text-center transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+              <div className={`card card-hover p-8 md:p-10 text-center transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                 <div className="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-5xl">✅</span>
                 </div>

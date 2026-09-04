@@ -31,7 +31,7 @@ export default function Services() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
             {services.map((svc, i) => (
-              <div key={svc.title} className={`card p-7 group transition-all duration-500 hover:-translate-y-2 hover:shadow-xl ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`} style={{ transitionDelay: `${i * 0.08}s` }}>
+              <div key={svc.title} className={`card card-hover p-7 group transition-all duration-500 hover:-translate-y-2 hover:shadow-xl ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`} style={{ transitionDelay: `${i * 0.08}s` }}>
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-sky-500 to-sky-400 rounded-t-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-sky-50 to-sky-100 flex items-center justify-center mb-5 text-3xl group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">{svc.icon}</div>
                 <h3 className="font-heading font-semibold text-lg mb-2 text-navy-900 group-hover:text-sky-700 transition-colors">{svc.title}</h3>
