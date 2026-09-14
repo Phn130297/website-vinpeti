@@ -1,9 +1,9 @@
-name: NextJS Deployment
+name: Deployment website auto
 # Kích hoạt workflow khi có code mới được push hoặc merge vào nhánh production
 on:
   push:
     branches:
-      - production
+      - main
 
 jobs:
   deploy:
@@ -18,10 +18,10 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: 22
           script: |
-            cd /home/next-deploy-vps
+            cd /home/website-vinpeti
             git fetch origin
-            git checkout production
+            git checkout main
             git pull
             npm install
             npm run build
-            pm2 reload next-demo
+            pm2 reload website-vinpeti
